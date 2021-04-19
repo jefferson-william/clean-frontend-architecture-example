@@ -2,10 +2,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "@/*": [
+        "./*"
+      ],
       "~/next/*": [
         "presentation/next/src/*"
       ],
-      "@/next/*": [
+      "~/next/public/*": [
         "presentation/next/public/*"
       ]
     }
