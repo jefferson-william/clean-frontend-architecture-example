@@ -1,17 +1,12 @@
 /* eslint-disable no-underscore-dangle */
 import { FC, useEffect } from 'react'
-import { useStore } from 'react-redux'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { ThemeProvider } from '@material-ui/core/styles'
-import { PersistGate } from 'redux-persist/integration/react'
-import wrapperStore from '~/next/shared/store'
 import theme from '~/next/shared/styles/theme'
 import LoadFont from '~/next/shared/utils/fonts/font-load'
 
 const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
-  const store: any = useStore()
-
   useEffect(() => {
     const jssStyles = document.querySelector('#jss-server-side')
 
@@ -27,16 +22,14 @@ const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Formulário do Candidato | Intera" />
-        <title>Formulário do Candidato | Intera</title>
+        <meta name="description" content="Boilerplate BDDD Frontend" />
+        <title>Boilerplate BDDD Frontend</title>
       </Head>
       <ThemeProvider theme={theme}>
-        <PersistGate persistor={store.__PERSISTOR} loading={null}>
-          <Component {...pageProps} {...router} />
-        </PersistGate>
+        <Component {...pageProps} {...router} />
       </ThemeProvider>
     </>
   )
 }
 
-export default wrapperStore.withRedux(MyApp)
+export default MyApp

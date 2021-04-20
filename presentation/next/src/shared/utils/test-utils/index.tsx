@@ -1,7 +1,6 @@
 import { render, waitFor, queries, RenderResult } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import theme from '~/next/shared/styles/theme'
-import getStore from '~/next/shared/utils/test-utils/get-store'
 import { MyRenderOptions, MyRenderedOptions } from '~/next/shared/utils/test-utils/index.d'
 import Providers from '~/next/shared/utils/test-utils/Providers'
 import customQueries, { MyQueries } from './custom-queries'
@@ -16,16 +15,14 @@ export const myRender = async (
 
   allOptions.theme = options?.theme || theme
 
-  const myStore = getStore(allOptions)
-
   const rendered = render<MyQueries, HTMLElement>(Component, {
-    wrapper: Providers(myStore, allOptions),
+    wrapper: Providers(allOptions),
     queries: { ...queries, ...customQueries } as MyQueries,
   })
 
   await waitFor(() => rendered.container.querySelector('body'))
 
-  return [rendered, { store: myStore, ...allOptions }]
+  return [rendered, { ...allOptions }]
 }
 
 export * from '@testing-library/react'

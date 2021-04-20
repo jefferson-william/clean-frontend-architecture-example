@@ -7,7 +7,7 @@ import { Layout } from './styles'
 
 const HeaderLoader = () => <div className="layout__header-loader" />
 
-const Header = dynamic(() => import('~/next/module/Candidate/components/molecules/Header'), {
+const Header = dynamic(() => import('~/next/shared/components/molecules/Header'), {
   ssr: false,
   loading: HeaderLoader,
 })

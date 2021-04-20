@@ -1,6 +1,6 @@
 import React from 'react'
-import Main from '~/next/pages/main'
+import Login from '~/next/module/Authentication/components/pages/Login'
 
-const InitialPage = () => <Main />
+const HomePage = () => <Login />
 
-export default InitialPage
+export default HomePage
