@@ -2,8 +2,8 @@ import { useMemo, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { useSelector } from 'react-redux'
 import { useTheme } from '@material-ui/core/styles'
-import { CandidateSelectorProps } from '~/module/Candidate/components/pages/Main/useDataPage.d'
-import States from '~/shared/store/rootStates.d'
+import { CandidateSelectorProps } from '~/next/module/Candidate/components/pages/Main/useDataPage.d'
+import States from '~/next/shared/store/rootStates.d'
 
 const useDataPage = () => {
   const theme = useTheme()

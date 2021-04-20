@@ -1,8 +1,8 @@
 import { useCallback, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
-import * as CandidateActions from '~/module/Candidate/store/actions'
-import { DataProps } from '~/shared/data'
-import { LinkedinSuccessAuthorizationTokenProps } from '~/shared/data/LinkedIn'
+import * as CandidateActions from '~/next/module/Candidate/store/actions'
+import { DataProps } from '~/next/shared/data'
+import { LinkedinSuccessAuthorizationTokenProps } from '~/next/shared/data/LinkedIn'
 import { UseLinkedinRulesProps } from './useLinkedinRules.d'
 
 const useLinkedinRules = ({

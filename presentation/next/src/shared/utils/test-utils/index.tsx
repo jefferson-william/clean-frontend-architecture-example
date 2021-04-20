@@ -1,9 +1,9 @@
 import { render, waitFor, queries, RenderResult } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import theme from '~/shared/styles/theme'
-import getStore from '~/shared/utils/test-utils/get-store'
-import { MyRenderOptions, MyRenderedOptions } from '~/shared/utils/test-utils/index.d'
-import Providers from '~/shared/utils/test-utils/Providers'
+import theme from '~/next/shared/styles/theme'
+import getStore from '~/next/shared/utils/test-utils/get-store'
+import { MyRenderOptions, MyRenderedOptions } from '~/next/shared/utils/test-utils/index.d'
+import Providers from '~/next/shared/utils/test-utils/Providers'
 import customQueries, { MyQueries } from './custom-queries'
 
 export const myRender = async (

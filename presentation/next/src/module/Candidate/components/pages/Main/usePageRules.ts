@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react'
 import { useDispatch } from 'react-redux'
-import * as CandidateActions from '~/module/Candidate/store/actions'
+import * as CandidateActions from '~/next/module/Candidate/store/actions'
 import { UsePageRulesProps } from './usePageRules.d'
 
 const usePageRules = ({ formData }: UsePageRulesProps) => {

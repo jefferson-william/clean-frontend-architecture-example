@@ -2,12 +2,12 @@ import { FC } from 'react'
 import dynamic from 'next/dynamic'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { StylesProvider } from '@material-ui/core/styles'
-import GlobalStyles from '~/shared/styles/global'
+import GlobalStyles from '~/next/shared/styles/global'
 import { Layout } from './styles'
 
 const HeaderLoader = () => <div className="layout__header-loader" />
 
-const Header = dynamic(() => import('~/module/Candidate/components/molecules/Header'), {
+const Header = dynamic(() => import('~/next/module/Candidate/components/molecules/Header'), {
   ssr: false,
   loading: HeaderLoader,
 })

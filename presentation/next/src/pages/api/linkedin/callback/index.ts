@@ -1,12 +1,12 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios'
-import { DataProps } from '~/shared/data'
+import { DataProps } from '~/next/shared/data'
 import {
   LinkedinSuccessAccessTokenProps,
   LinkedinRetrieveMePictureProps,
   LinkedinMeProps,
   LinkedinMeEmailProps,
-} from '~/shared/data/LinkedIn'
+} from '~/next/shared/data/LinkedIn'
 
 export default async function handler(request: NextApiRequest, response: NextApiResponse<Partial<DataProps> | object>) {
   if (request.method !== 'POST') {

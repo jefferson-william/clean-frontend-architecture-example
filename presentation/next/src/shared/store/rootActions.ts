@@ -1,3 +1,3 @@
-import * as Candidate from '~/module/Candidate/store/actions'
+import * as Candidate from '~/next/module/Candidate/store/actions'
 
 export const CandidateAction = Candidate

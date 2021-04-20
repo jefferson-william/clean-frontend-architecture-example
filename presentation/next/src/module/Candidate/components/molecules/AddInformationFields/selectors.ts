@@ -1,4 +1,4 @@
-import { screen } from '~/shared/utils/test-utils'
+import { screen } from '~/next/shared/utils/test-utils'
 
 export function findByWhereDidYouWorkInput() {
   return screen.findByRole('textbox', { name: 'Onde já trabalhou?' })

@@ -1,10 +1,10 @@
 import axios, { AxiosResponse } from 'axios'
 import { call, put, all, takeLatest, select } from 'redux-saga/effects'
-import * as CandidateActions from '~/module/Candidate/store/actions'
-import TYPES from '~/module/Candidate/store/types'
-import { DataProps } from '~/shared/data'
-import Action from '~/shared/lib/typesafe-actions'
-import States from '~/shared/store/rootStates.d'
+import * as CandidateActions from '~/next/module/Candidate/store/actions'
+import TYPES from '~/next/module/Candidate/store/types'
+import { DataProps } from '~/next/shared/data'
+import Action from '~/next/shared/lib/typesafe-actions'
+import States from '~/next/shared/store/rootStates.d'
 
 export function* linkedinDataRequest({ payload: code }: Action<string>) {
   try {

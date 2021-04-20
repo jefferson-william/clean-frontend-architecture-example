@@ -1,8 +1,8 @@
 import { produce } from 'immer'
 import { Reducer } from 'redux'
-import { INITIAL_STATE } from '~/module/Candidate/store/state'
-import TYPES from '~/module/Candidate/store/types'
-import Action from '~/shared/lib/typesafe-actions'
+import { INITIAL_STATE } from '~/next/module/Candidate/store/state'
+import TYPES from '~/next/module/Candidate/store/types'
+import Action from '~/next/shared/lib/typesafe-actions'
 import State from './state.d'
 
 const reducer: Reducer<State, Action<State>> = (state = INITIAL_STATE, action) => {

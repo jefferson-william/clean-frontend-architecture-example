@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { Container } from '@material-ui/core'
-import Logo from '~/shared/assets/images/logo-intera.png'
+import Logo from '~/next/shared/assets/images/logo-intera.png'
 import { Header } from './styles'
 
 const Component: React.FC = () => (

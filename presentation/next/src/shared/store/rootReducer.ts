@@ -1,8 +1,8 @@
 import { HYDRATE } from 'next-redux-wrapper'
 import { combineReducers } from 'redux'
-import Candidate from '~/module/Candidate/store/reducer'
-import Action from '~/shared/lib/typesafe-actions'
-import States from '~/shared/store/rootStates.d'
+import Candidate from '~/next/module/Candidate/store/reducer'
+import Action from '~/next/shared/lib/typesafe-actions'
+import States from '~/next/shared/store/rootStates.d'
 
 export const combinedReducer = combineReducers({
   Candidate,

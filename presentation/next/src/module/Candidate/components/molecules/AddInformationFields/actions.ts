@@ -1,8 +1,8 @@
 import {
   getAllByRemoveWhereDidWorkIconButton,
   getAllWhereDidYouWorkInput,
-} from '~/module/Candidate/components/molecules/AddInformationFields/selectors'
-import { MyRenderResult, screen, userEvent } from '~/shared/utils/test-utils'
+} from '~/next/module/Candidate/components/molecules/AddInformationFields/selectors'
+import { MyRenderResult, screen, userEvent } from '~/next/shared/utils/test-utils'
 
 export function clickWhereDidWorkAddButton() {
   userEvent.click(screen.getAllByRole('button', { name: 'Adicionar' })[0])

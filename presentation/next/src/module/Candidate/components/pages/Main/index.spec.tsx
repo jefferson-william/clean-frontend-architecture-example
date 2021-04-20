@@ -1,19 +1,19 @@
-import { populateWhereDidYouWorkForm } from '~/module/Candidate/components/molecules/AddInformationFields/actions'
+import { populateWhereDidYouWorkForm } from '~/next/module/Candidate/components/molecules/AddInformationFields/actions'
 import {
   findByWhereDidYouWorkInput,
   getAllWhereDidYouWorkInput,
-} from '~/module/Candidate/components/molecules/AddInformationFields/selectors'
-import Main from '~/module/Candidate/components/pages/Main'
+} from '~/next/module/Candidate/components/molecules/AddInformationFields/selectors'
+import Main from '~/next/module/Candidate/components/pages/Main'
 import {
   clickNextButton,
   clickSendButton,
   populateBasicDataForm,
   populateKnowledgeForm,
-} from '~/module/Candidate/components/pages/Main/actions'
-import { findByKnowledgeInput } from '~/module/Candidate/components/pages/Main/selectors'
-import { render, act, MyRenderResult, waitForElementToBeRemoved } from '~/shared/utils/test-utils'
-import { MyRenderedOptions } from '~/shared/utils/test-utils/index.d'
-import '~/__mocks__/nextRouter'
+} from '~/next/module/Candidate/components/pages/Main/actions'
+import { findByKnowledgeInput } from '~/next/module/Candidate/components/pages/Main/selectors'
+import { render, act, MyRenderResult, waitForElementToBeRemoved } from '~/next/shared/utils/test-utils'
+import { MyRenderedOptions } from '~/next/shared/utils/test-utils/index.d'
+import '~/next/__mocks__/nextRouter'
 
 describe('pages/main', () => {
   let wrapper: MyRenderResult

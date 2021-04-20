@@ -1,5 +1,5 @@
 import { Control, FieldValues } from 'react-hook-form'
-import { DataProps } from '~/types/data'
+import { DataProps } from '~/next/types/data'
 
 export interface UseLinkedinRulesProps {
   formData: DataProps

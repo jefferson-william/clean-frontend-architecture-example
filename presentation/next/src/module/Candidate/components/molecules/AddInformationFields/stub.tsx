@@ -1,7 +1,7 @@
 import { FC, useState } from 'react'
 import { useForm } from 'react-hook-form'
-import AddInformationFields from '~/module/Candidate/components/molecules/AddInformationFields'
-import { AddInformationFieldsStubProps } from '~/module/Candidate/components/molecules/AddInformationFields/stub.d'
+import AddInformationFields from '~/next/module/Candidate/components/molecules/AddInformationFields'
+import { AddInformationFieldsStubProps } from '~/next/module/Candidate/components/molecules/AddInformationFields/stub.d'
 
 const AddInformationFieldsStub: FC<AddInformationFieldsStubProps> = ({ list }) => {
   const [values, setList] = useState<string[]>(list)
