@@ -9,8 +9,9 @@ module.exports = override((config, env) => {
   removeModuleScopePlugin()(configuration)
 
   configuration = rewireAliases.aliasesOptions({
-    '@': path.resolve(__dirname, `${paths.appPublic}`),
-    '~': path.resolve(__dirname, `${paths.appSrc}`),
+    '@': path.resolve(__dirname, '..', '..'),
+    '~/next': path.resolve(__dirname, `${paths.appSrc}`),
+    '~/next/public': path.resolve(__dirname, `${paths.appPublic}`),
   })(config, env)
 
   return configuration

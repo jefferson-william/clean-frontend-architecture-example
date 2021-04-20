@@ -37,8 +37,9 @@ module.exports = {
       {
         root: ['./'],
         alias: {
-          '~': './src',
-          '@': './public',
+          '@/': '../..',
+          '~/next/': './presentation/next/src',
+          '~/next/public/': './presentation/next/public',
         },
       },
     ],
